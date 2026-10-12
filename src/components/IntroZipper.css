@@ -1,0 +1,97 @@
+.bag-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3efe6;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.bag-card {
+  background: #fdfbf7;
+  border-radius: 28px;
+  padding: 40px 32px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid #ebe5d8;
+  text-align: center;
+}
+
+.bag-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.bag-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #3d2c1e;
+  margin-bottom: 24px;
+}
+
+.zipper-wrapper {
+  position: relative;
+  height: 140px;
+  width: 32px;
+  margin-bottom: 28px;
+}
+
+.zipper-track {
+  width: 16px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    #d1be9d,
+    #d1be9d 4px,
+    #bfa882 4px,
+    #bfa882 8px
+  );
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.zipper-pull {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.zipper-pull.pulled {
+  transform: translate(-50%, 90px);
+}
+
+.pull-head {
+  width: 28px;
+  height: 32px;
+  background: #7a5a41;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.pull-ring {
+  width: 16px;
+  height: 18px;
+  border: 3px solid #7a5a41;
+  border-radius: 50%;
+  margin: -4px auto 0;
+}
+
+.zipper-hint {
+  background: #f7f1e3;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #614a37;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e2d7c3;
+}
